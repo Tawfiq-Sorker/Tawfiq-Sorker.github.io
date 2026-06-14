@@ -7,64 +7,31 @@
     <style>
         * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
         
-        /* পুরো ওয়েবসাইটের ব্যাকগ্রাউন্ড কালার ও ডিজাইন */
+        /* এখানে tawfiq.jpg ছবিটি সরাসরি ব্যাকগ্রাউন্ডে সেট করা হয়েছে */
         body { 
-            background: #1a1c23;
-            background-image: linear-gradient(135deg, #1f212a 25%, #1a1c23 100%);
-            color: #fff; 
+            background-image: url('http://tawfiq-sorker.github.io/tawfiq.jpg'); 
+            background-size: cover;          /* ছবিটি পুরো স্ক্রিন জুড়ে দেখাবে */
+            background-position: center;     /* ছবিটি স্ক্রিনের মাঝে থাকবে */
+            background-attachment: fixed;    /* স্ক্রল করলেও ছবি নড়বে না */
+            background-repeat: no-repeat;    /* ছবি বারবার রিপিট হবে না */
+            color: #333; 
             line-height: 1.6; 
         }
         
-        header { 
-            background: linear-gradient(135deg, #24292e, #4c51bf); 
-            color: white; 
-            text-align: center; 
-            padding: 60px 20px; 
-            border-bottom: 3px solid #4c51bf;
-        }
-
+        header { background: linear-gradient(135deg, rgba(36, 41, 46, 0.9), rgba(76, 81, 191, 0.9)); color: white; text-align: center; padding: 60px 20px; }
         header h1 { font-size: 2.5rem; margin-bottom: 10px; }
         header p { font-size: 1.2rem; opacity: 0.9; }
-        
         .container { max-width: 800px; margin: 30px auto; padding: 0 20px; }
         
-        /* কার্ডগুলোর স্টাইল */
-        .card { 
-            background: #242631; 
-            padding: 25px; 
-            border-radius: 12px; 
-            box-shadow: 0 8px 24px rgba(0,0,0,0.2); 
-            margin-bottom: 25px; 
-            border: 1px solid #2d303e;
-        }
+        /* কার্ডের ব্যাকগ্রাউন্ড একটু স্বচ্ছ (rgba) করা হয়েছে যাতে পেছনের ছবি হালকা বোঝা যায় */
+        .card { background: rgba(255, 255, 255, 0.95); padding: 25px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); margin-bottom: 25px; }
         
-        .card h2 { color: #6366f1; margin-bottom: 15px; border-bottom: 2px solid #2d303e; padding-bottom: 5px; }
-        .card p { color: #cbd5e1; font-size: 1.1rem; }
-
-        /* বাটনগুলোর আকর্ষণীয় ডিজাইন */
-        .btn { 
-            display: inline-block; 
-            background: #4c51bf; 
-            color: white; 
-            padding: 12px 24px; 
-            text-decoration: none; 
-            border-radius: 6px; 
-            font-weight: bold; 
-            margin-top: 15px; 
-            margin-right: 10px; 
-            text-align: center; 
-            transition: 0.3s;
-        }
-        .btn:hover { background: #3b3f9a; transform: translateY(-2px); }
-        
+        .card h2 { color: #4c51bf; margin-bottom: 15px; border-bottom: 2px solid #e2e8f0; padding-bottom: 5px; }
+        .btn { display: inline-block; background: #4c51bf; color: white; padding: 12px 24px; text-decoration: none; border-radius: 6px; font-weight: bold; margin-top: 15px; margin-right: 10px; text-align: center; }
+        .btn:hover { background: #3b3f9a; }
         .btn-fb { background: #1877f2; }
         .btn-fb:hover { background: #145dbf; }
-        
-        /* ফটো দেখার বাটন */
-        .btn-photo { background: #10b981; }
-        .btn-photo:hover { background: #059669; }
-
-        footer { text-align: center; padding: 25px; color: #94a3b8; font-size: 0.9rem; margin-top: 40px; background: #111319; }
+        footer { text-align: center; padding: 20px; color: white; font-size: 0.9rem; margin-top: 40px; background: rgba(0, 0, 0, 0.7); }
     </style>
 </head>
 <body>
@@ -75,31 +42,23 @@
     </header>
 
     <div class="container">
-        <!-- আমার সম্পর্কে -->
         <div class="card">
             <h2>আমার সম্পর্কে 🙋‍♂️</h2>
-            <p>স্বাগতম আমার ওয়েবসাইটে! আমি তৌফিক। প্রযুক্তি এবং নতুন নতুন জিনিস শিখতে আমার দারুণ লাগে। গิตহাব পেজেস ব্যবহার করে আমি এই ফ্রি ওয়েবসাইটটি তৈরি করেছি।</p>
+            <p>স্বাগতম আমার ওয়েবসাইটে! আমি তৌফিক।</p>
         </div>
 
-        <!-- আমার সেবা কাজ -->
         <div class="card">
             <h2>আমি যা করি 💻</h2>
-            <p>আমি এখন নবম শ্রেণীতে পড়ি। পড়াশোনার পাশাপাশি কোডিং এবং ওয়েব ডিজাইন শেখার চেষ্টা করছি।</p>
-            
-            <!-- আপনার ছবি দেখার জন্য আলাদা আকর্ষণীয় বাটন -->
-            <a href="https://photos.app.goo.gl/wS62hUu27yfAPEZW9" target="_blank" class="btn btn-photo">📸 আমার ছবি দেখুন</a>
+            <p>আমি এখন নবম শ্রেণীতে পড়ি।</p>
         </div>
 
-        <!-- যোগাযোগ -->
         <div class="card">
             <h2>যোগাযোগ করুন 📩</h2>
             <p>যেকোনো কাজের জন্য বা প্রয়োজনে আমার সাথে নিচে দেওয়া ইমেইল অথবা ফেসবুকের মাধ্যমে যোগাযোগ করতে পারেন:</p>
-            <p style="font-weight: bold; margin-top: 15px; color: #f1f5f9;">ইমেইল: tawfiqtawfiq727@gmail.com</p>
+            <p style="font-weight: bold; margin-top: 15px; color: #2d3748;">ইমেইল: tawfiqtawfiq727@gmail.com</p>
             
-            <!-- মেইল বাটন -->
             <a href="mailto:tawfiqtawfiq727@gmail.com" class="btn">সরাসরি মেইল করুন</a>
             
-            <!-- ফেসবুক বাটন -->
             <a href="https://www.facebook.com/share/1BrFbGy84H/" target="_blank" class="btn btn-fb">ফেসবুকে যোগাযোগ</a>
         </div>
     </div>
