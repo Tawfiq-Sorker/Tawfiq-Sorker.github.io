@@ -6,18 +6,65 @@
     <title>Tawfiq Sorker | Portfolio</title>
     <style>
         * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
-        body { background-color: #f8f9fa; color: #333; line-height: 1.6; }
-        header { background: linear-gradient(135deg, #24292e, #4c51bf); color: white; text-align: center; padding: 60px 20px; }
+        
+        /* পুরো ওয়েবসাইটের ব্যাকগ্রাউন্ড কালার ও ডিজাইন */
+        body { 
+            background: #1a1c23;
+            background-image: linear-gradient(135deg, #1f212a 25%, #1a1c23 100%);
+            color: #fff; 
+            line-height: 1.6; 
+        }
+        
+        header { 
+            background: linear-gradient(135deg, #24292e, #4c51bf); 
+            color: white; 
+            text-align: center; 
+            padding: 60px 20px; 
+            border-bottom: 3px solid #4c51bf;
+        }
+
         header h1 { font-size: 2.5rem; margin-bottom: 10px; }
         header p { font-size: 1.2rem; opacity: 0.9; }
+        
         .container { max-width: 800px; margin: 30px auto; padding: 0 20px; }
-        .card { background: white; padding: 25px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); margin-bottom: 25px; }
-        .card h2 { color: #4c51bf; margin-bottom: 15px; border-bottom: 2px solid #e2e8f0; padding-bottom: 5px; }
-        .btn { display: inline-block; background: #4c51bf; color: white; padding: 12px 24px; text-decoration: none; border-radius: 6px; font-weight: bold; margin-top: 15px; margin-right: 10px; text-align: center; }
-        .btn:hover { background: #3b3f9a; }
+        
+        /* কার্ডগুলোর স্টাইল */
+        .card { 
+            background: #242631; 
+            padding: 25px; 
+            border-radius: 12px; 
+            box-shadow: 0 8px 24px rgba(0,0,0,0.2); 
+            margin-bottom: 25px; 
+            border: 1px solid #2d303e;
+        }
+        
+        .card h2 { color: #6366f1; margin-bottom: 15px; border-bottom: 2px solid #2d303e; padding-bottom: 5px; }
+        .card p { color: #cbd5e1; font-size: 1.1rem; }
+
+        /* বাটনগুলোর আকর্ষণীয় ডিজাইন */
+        .btn { 
+            display: inline-block; 
+            background: #4c51bf; 
+            color: white; 
+            padding: 12px 24px; 
+            text-decoration: none; 
+            border-radius: 6px; 
+            font-weight: bold; 
+            margin-top: 15px; 
+            margin-right: 10px; 
+            text-align: center; 
+            transition: 0.3s;
+        }
+        .btn:hover { background: #3b3f9a; transform: translateY(-2px); }
+        
         .btn-fb { background: #1877f2; }
         .btn-fb:hover { background: #145dbf; }
-        footer { text-align: center; padding: 20px; color: #718096; font-size: 0.9rem; margin-top: 40px; }
+        
+        /* ফটো দেখার বাটন */
+        .btn-photo { background: #10b981; }
+        .btn-photo:hover { background: #059669; }
+
+        footer { text-align: center; padding: 25px; color: #94a3b8; font-size: 0.9rem; margin-top: 40px; background: #111319; }
     </style>
 </head>
 <body>
@@ -31,20 +78,23 @@
         <!-- আমার সম্পর্কে -->
         <div class="card">
             <h2>আমার সম্পর্কে 🙋‍♂️</h2>
-            <p>স্বাগতম আমার ওয়েবসাইটে! আমি তৌফিক।</p>
+            <p>স্বাগতম আমার ওয়েবসাইটে! আমি তৌফিক। প্রযুক্তি এবং নতুন নতুন জিনিস শিখতে আমার দারুণ লাগে। গิตহাব পেজেস ব্যবহার করে আমি এই ফ্রি ওয়েবসাইটটি তৈরি করেছি।</p>
         </div>
 
         <!-- আমার সেবা কাজ -->
         <div class="card">
             <h2>আমি যা করি 💻</h2>
-            <p>আমি এখন নবম শ্রেণীতে পড়ি।</p>
+            <p>আমি এখন নবম শ্রেণীতে পড়ি। পড়াশোনার পাশাপাশি কোডিং এবং ওয়েব ডিজাইন শেখার চেষ্টা করছি।</p>
+            
+            <!-- আপনার ছবি দেখার জন্য আলাদা আকর্ষণীয় বাটন -->
+            <a href="https://photos.app.goo.gl/wS62hUu27yfAPEZW9" target="_blank" class="btn btn-photo">📸 আমার ছবি দেখুন</a>
         </div>
 
         <!-- যোগাযোগ -->
         <div class="card">
             <h2>যোগাযোগ করুন 📩</h2>
             <p>যেকোনো কাজের জন্য বা প্রয়োজনে আমার সাথে নিচে দেওয়া ইমেইল অথবা ফেসবুকের মাধ্যমে যোগাযোগ করতে পারেন:</p>
-            <p style="font-weight: bold; margin-top: 15px; color: #2d3748;">ইমেইল: tawfiqtawfiq727@gmail.com</p>
+            <p style="font-weight: bold; margin-top: 15px; color: #f1f5f9;">ইমেইল: tawfiqtawfiq727@gmail.com</p>
             
             <!-- মেইল বাটন -->
             <a href="mailto:tawfiqtawfiq727@gmail.com" class="btn">সরাসরি মেইল করুন</a>
