@@ -18,7 +18,14 @@
             line-height: 1.6; 
         }
         
-        header { background: linear-gradient(135deg, rgba(26, 32, 44, 0.85), rgba(76, 81, 191, 0.85)); color: white; text-align: center; padding: 50px 20px; }
+        /* মুখের ওপর থেকে রঙের ফিল্টার সরানোর জন্য হেডার ব্যাকগ্রাউন্ড সম্পূর্ণ স্বচ্ছ (Transparent) করা হলো */
+        header { 
+            background: transparent; 
+            color: white; 
+            text-align: center; 
+            padding: 60px 20px; 
+            text-shadow: 0 2px 8px rgba(0, 0, 0, 0.8); /* টেক্সটের নিচে হালকা শ্যাডো দেওয়া হলো যাতে লেখা পরিষ্কার পড়া যায় */
+        }
         
         /* গোল প্রোফাইল পিকচার */
         .profile-img {
@@ -28,29 +35,29 @@
             border: 4px solid white;
             object-fit: cover;
             margin-bottom: 15px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.4);
         }
 
         header h1 { font-size: 2.5rem; margin-bottom: 10px; }
-        header p { font-size: 1.2rem; opacity: 0.9; }
-        .container { max-width: 800px; margin: 30px auto; padding: 0 20px; }
+        header p { font-size: 1.2rem; opacity: 0.95; font-weight: 500; }
+        .container { max-width: 800px; margin: 10px auto 30px auto; padding: 0 20px; }
         
-        /* কার্ডের ব্যাকগ্রাউন্ড একটু স্বচ্ছ করা হয়েছে যাতে পেছনের ছবি সুন্দর দেখায় */
-        .card { background: rgba(255, 255, 255, 0.93); padding: 25px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.15); margin-bottom: 25px; }
+        /* কার্ডের ব্যাকগ্রাউন্ড একটু স্বচ্ছ রাখা হয়েছে যেন সাইটটি আধুনিক দেখায় */
+        .card { background: rgba(255, 255, 255, 0.95); padding: 25px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.2); margin-bottom: 25px; }
         
         .card h2 { color: #4c51bf; margin-bottom: 15px; border-bottom: 2px solid #e2e8f0; padding-bottom: 5px; }
         .btn { display: inline-block; background: #4c51bf; color: white; padding: 12px 24px; text-decoration: none; border-radius: 6px; font-weight: bold; margin-top: 15px; margin-right: 10px; text-align: center; }
         .btn:hover { background: #3b3f9a; }
         .btn-fb { background: #1877f2; }
         .btn-fb:hover { background: #145dbf; }
-        footer { text-align: center; padding: 20px; color: white; font-size: 0.9rem; margin-top: 40px; background: rgba(26, 32, 44, 0.9); }
+        footer { text-align: center; padding: 20px; color: white; font-size: 0.9rem; margin-top: 40px; background: rgba(0, 0, 0, 0.8); }
     </style>
 </head>
 <body>
 
     <header>
         <!-- আপনার ছবি এখানে প্রোফাইল পিকচার হিসেবেও দেখাবে -->
-        <img src="https://i.ibb.co/s91qhq6J/tawfiq.jpg" alt="Tawfiq Sorker" class="profile-img">
+        <img src="https://i.ibb.co.com/s91qhq6J/tawfiq.jpg" alt="Tawfiq Sorker" class="profile-img">
         <h1>তৌফিক সরকার (Tawfiq Sorker)</h1>
         <p>ওয়েব ডেভেলপার | টেক উৎসাহী | ফ্রিল্যান্সার</p>
     </header>
